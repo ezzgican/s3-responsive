@@ -46,8 +46,9 @@ body {
 header {
   padding: 25px 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .logo {
@@ -59,7 +60,7 @@ nav {
   display: flex;
   gap: 15px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 0.75rem;
 }
 
 nav a {
@@ -87,7 +88,7 @@ nav a:hover {
 
 .hero h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 2rem;
   color: #70d000;
 }
 
@@ -110,7 +111,7 @@ nav a:hover {
 
   header {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     padding: 20px 10px 15px 10px;
     gap: 15px;
   }
@@ -119,13 +120,15 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
 
   nav a {
     flex: 0 0 25%;
     text-align: center;
+    width: 25%;
   }
+  
 
   .hero {
     margin-top: 0;
@@ -140,11 +143,11 @@ nav a:hover {
   }
 
   .hero h1 {
-    font-size: 200%;
+    font-size: 2rem;
   }
 
   .hero p {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
